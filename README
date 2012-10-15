@@ -3,6 +3,9 @@ NAME
     undef
 
 SYNOPSIS
+      use 5.010;
+      use Hash::DefaultValue;
+  
       tie my %hash, 'Hash::DefaultValue', 42;
       say $hash{the_answer};  # says 42
 
@@ -59,11 +62,20 @@ DESCRIPTION
 
       tie my %hash, 'Hash::DefaultValue', sub { \@foo };
 
+  Alias
+    The aliased module allows you to define aliases for class names, and
+    works great for tie implementations.
+
+      use aliased 'Hash::DefaultValue' => 'HDV';
+      tie my %hash, HDV, 42;
+
 BUGS
     Please report any bugs to
     <http://rt.cpan.org/Dist/Display.html?Queue=Hash-DefaultValue>.
 
 SEE ALSO
+    Hash::Missing is a subclass of this module.
+
     Hash::WithDefaults allows you to default particular keys by providing a
     template hashref.
 

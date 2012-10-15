@@ -5,6 +5,14 @@ Created:      2012-05-18
 Home page:    <https://metacpan.org/release/Hash-DefaultValue>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Hash-DefaultValue>
 
+0.002  2012-10-15
+
+ - (Addition) Hash::Missing
+   ++$VOJ
+ - (Documentation) Show how the 'aliased' module can be used with
+   Hash::DefaultValue.
+ - No warning on $hash{$key} where $key is undef.
+
 0.001  2012-05-18  # Initial release
 
 

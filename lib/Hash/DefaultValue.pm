@@ -10,21 +10,23 @@ use Carp qw(croak);
 
 use constant {
 	IDX_HASH   => 0,
-	IDX_CODE   => 1, 
+	IDX_CODE   => 1,
 	NEXT_IDX   => 2,
 };
+use constant _default => undef;
 
 BEGIN {
 	no warnings 'once';
 	$Hash::DefaultValue::AUTHORITY = 'cpan:TOBYINK';
-	$Hash::DefaultValue::VERSION   = '0.001';
+	$Hash::DefaultValue::VERSION   = '0.002';
 	@Hash::DefaultValue::ISA       = qw(Tie::ExtraHash);
 }
 
 sub TIEHASH
 {
-	my ($class, $coderef) = @_;
-	
+	my $class    = shift;
+	my $coderef  = @_ ? shift : $class->_default;
+
 	unless (ref $coderef)
 	{
 		my $value = $coderef;
@@ -42,6 +44,7 @@ sub TIEHASH
 sub FETCH
 {
 	my ($this, $key)  = @_;
+	$key = '' unless defined $key;
 	
 	unless (exists $this->[IDX_HASH]{$key})
 	{
@@ -61,6 +64,9 @@ Hash::DefaultValue - create a hash where the default value is ain't undef
 
 =head1 SYNOPSIS
 
+  use 5.010;
+  use Hash::DefaultValue;
+  
   tie my %hash, 'Hash::DefaultValue', 42;
   say $hash{the_answer};  # says 42
 
@@ -120,12 +126,22 @@ it in a coderef.
 
   tie my %hash, 'Hash::DefaultValue', sub { \@foo };
 
+=head2 Alias
+
+The L<aliased> module allows you to define aliases for class names, and
+works great for tie implementations.
+
+  use aliased 'Hash::DefaultValue' => 'HDV';
+  tie my %hash, HDV, 42;
+
 =head1 BUGS
 
 Please report any bugs to
 L<http://rt.cpan.org/Dist/Display.html?Queue=Hash-DefaultValue>.
 
 =head1 SEE ALSO
+
+L<Hash::Missing> is a subclass of this module.
 
 L<Hash::WithDefaults> allows you to default particular keys by
 providing a template hashref.
