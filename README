@@ -1,6 +1,5 @@
 NAME
-    Hash::DefaultValue - create a hash where the default value is ain't
-    undef
+    Hash::DefaultValue - create a hash where the default value ain't undef
 
 SYNOPSIS
       use 5.010;

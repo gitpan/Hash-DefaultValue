@@ -16,7 +16,7 @@ BEGIN {
 	require Hash::DefaultValue;
 	no warnings 'once';
 	$Hash::Missing::AUTHORITY = 'cpan:TOBYINK';
-	$Hash::Missing::VERSION   = '0.004';
+	$Hash::Missing::VERSION   = '0.005';
 	@Hash::Missing::ISA       = qw(Hash::DefaultValue);
 }
 
@@ -25,7 +25,7 @@ __END__
 
 =head1 NAME
 
-Hash::Missing - a hash that warns when retrieving non-existant keys
+Hash::Missing - a hash that warns when retrieving non-existent keys
 
 =head1 SYNOPSIS
 
