@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,47 +14,29 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 dda3be00db0ed980e5d2feb24e14b8871308957d COPYRIGHT
-SHA1 4deb52732dacff875aebd61fe36b5c75971a8984 Changes
-SHA1 58e47fed556f626572681c48158a3ecd44ce179d HACKING
-SHA1 751622022e0442f0cdf120b2866ff0ed7806311c LICENSE
-SHA1 a81a9b59cdfe1f1ba3ce1c3f9fd76786910e5aee MANIFEST
-SHA1 1ca52584a66896f5c3c3aecc6e32e1735540ba94 META.yml
-SHA1 b9d5dd0b476253d37384aed42664179605286153 Makefile.PL
-SHA1 0f096a609391049ba50cdd3dde49c0ad4a6d8203 README
-SHA1 06c410f05488c1612ed66b06d3a86b2580581e4a inc/Module/AutoInstall.pm
-SHA1 8a924add836b60fb23b25c8506d45945e02f42f4 inc/Module/Install.pm
-SHA1 61ab1dd37e33ddbe155907ce51df8a3e56ac8bbf inc/Module/Install/AutoInstall.pm
-SHA1 c04f94f91fa97b9f8cfb5a36071098ab0e6c78e3 inc/Module/Install/AutoManifest.pm
-SHA1 2d0fad3bf255f8c1e7e1e34eafccc4f595603ddc inc/Module/Install/Base.pm
-SHA1 f0e01fff7d73cd145fbf22331579918d4628ddb0 inc/Module/Install/Can.pm
-SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
-SHA1 66d3d335a03492583a3be121a7d888f63f08412c inc/Module/Install/Include.pm
-SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
-SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
-SHA1 3b9281ddf7dd6d6f5de0a9642c69333023193c80 inc/Module/Install/Package.pm
-SHA1 9de7b5129351499c048328dfa718d0eab557cf30 inc/Module/Install/TrustMetaYml.pm
-SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
-SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
-SHA1 26d58a041cd6b3d21db98b32e8fd1841aae21204 inc/Module/Package.pm
-SHA1 c18deb3025b83dda8ac7c97f1e29599e1d2c7378 inc/Module/Package/Dist/RDF.pm
-SHA1 0e0eed2e69d9583081868cf4f220068d0a018568 inc/Scalar/Util.pm
-SHA1 feb933cefe2e3762e8322bd6071a2499f3440da1 inc/YAML/Tiny.pm
-SHA1 8105c0510a773b56840995fb4dd2dc64fe9ddaee inc/unicore/Name.pm
-SHA1 36df501c7c9b73c282c5174ed54d8283b2f2cbf2 inc/utf8.pm
-SHA1 62faf59ccc1e2101d263c63892278ff31e7cbe9a lib/Hash/DefaultValue.pm
-SHA1 1ffda950f25c43b7b97224be4305b0ddf00077a3 lib/Hash/Missing.pm
-SHA1 afc98fcb27cef2a0b4924a88f750c34029c71b3b meta/changes.pret
-SHA1 449158e87d06313910dff304e82560d8e86dec9e meta/doap.pret
-SHA1 86ab71ef92f78af3a64c725a72843e7a7669f4bf meta/makefile.ttl
+SHA1 33317486c4fa2cf7fec85bf92ed38ac0f64233a0 CONTRIBUTING
+SHA1 7b9443fc396ae3e6f0f540de1efdd21ec0a8fac6 COPYRIGHT
+SHA1 ff61efa10702533f111fa804378f013e56069c18 CREDITS
+SHA1 c69e7fc7d7bee954b96781c0ea80bb4c3891113f Changes
+SHA1 4a7ee58e2219ad199d2c2c026349058b2bdc10d8 INSTALL
+SHA1 8bc8924e05cabf48cb96d2939a8d593ba5e83880 LICENSE
+SHA1 799c75b6a73f4ef527f99650bd9d91d631e17165 MANIFEST
+SHA1 a5080b30d17c9d161a5ee18a3b08a09564ad2e85 META.json
+SHA1 19bec8331afd195cbd850288f9fe567fd992ac7c META.yml
+SHA1 cfa296f9ff22159d24efbdd405a0ca4da453f0ab Makefile.PL
+SHA1 d75617a573d37f810c74310da27a6adca52a65ee README
+SHA1 fd1d3773d64bd83afa80c207ea468a89e1af320e dist.ini
+SHA1 fdfcc7aa0860a198b3dc208b67dac3f55e426e38 doap.ttl
+SHA1 4986133f39cda1ad503aa747f68025020b97c5c9 lib/Hash/DefaultValue.pm
+SHA1 aae00321e807e657e9f9f9c0739aaae044dce0e9 lib/Hash/Missing.pm
 SHA1 e9bb68fdd6fbf60d462fa167d2dbed45809592e3 t/01basic.t
 SHA1 2a0e6e852a054868ca2791fe83c5678189989452 t/02tie.t
 SHA1 db5084d55c6bec791a85e4ee7532b4ac084a0c37 t/03warnings.t
 SHA1 6dce9223353defd7e0c52581371e74c19df960f7 t/04missing.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.10 (GNU/Linux)
+Version: GnuPG v1
 
-iEYEARECAAYFAlDMye8ACgkQzr+BKGoqfTmE0QCfb4KSHDf9jZg3O6TmNVz1PvKc
-WhsAnR7wNc7xjyEUf3NYrm3CTnUNOjJI
-=4YEJ
+iEYEARECAAYFAlQQ0JYACgkQzr+BKGoqfTlVZACfarkYFIpm+PDmPlAa0PJTnI5r
+A18An2NOtcX67D33QXAgs5HzoNWdemiR
+=RQ5D
 -----END PGP SIGNATURE-----
